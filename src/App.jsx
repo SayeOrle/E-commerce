@@ -1,19 +1,16 @@
 import "./App.css";
 import Layout from "./layout";
-import Carousel from "./components/ui/Carousel";
-import { useState } from "react";
 import { mainContext } from "./context";
 import OutsideClickHandler from "react-outside-click-handler";
 import { BsSearch } from "react-icons/bs";
 import product from "./images/1.png";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import Categories from "./components/ui/Categories";
-import FProducts from "./components/Products/FProducts";
-import FashionSection from "./components/fashion/FashionSection";
-import Arrivals from "./components/Products/Arrivals";
-import OurBlog from "./components/blog/OurBlog";
-import Brends from "./components/brends/Brends";
-import Campaign from "./components/Campaign/Campaign";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Contact from "./components/pages/Contact";
+import { useState } from "react";
+import Home from "./components/Home";
+import Shop from "./components/pages/Shop";
+import Auth from "./components/pages/Auth";
 function App() {
   const [modal, setModal] = useState(false);
   const data = {
@@ -29,6 +26,16 @@ function App() {
     <mainContext.Provider value={data}>
       <Layout>
         <div>
+        <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<Home/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/shop" element={<Shop/>}/>
+          <Route path="/register" element={<Auth/>}/>
+
+        </Routes>
+        </BrowserRouter>
+
           <div
             className={`after:w-screen after:h-screen after:bg-black after:fixed after:z-40 after:top-0 after:opacity-60 grid place-content-center  ${
               modal ? " visible opacity-100 " : " invisible opacity-0 "
@@ -85,14 +92,6 @@ function App() {
               </div>
             </OutsideClickHandler>
           </div>
-          <Carousel />
-          <Categories />
-          <FProducts/>
-          <FashionSection/>
-          <Arrivals/>
-          <OurBlog/>
-          <Brends/>
-          <Campaign/> 
 
         </div>
 

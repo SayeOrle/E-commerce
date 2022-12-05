@@ -18,7 +18,7 @@ function Header() {
           SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL
           DELIVERY- OFF 50%!
           <span className="font-extrabold hover:underline">
-            <a href="#shop"> SHOP NOW</a>
+            <a href="/shop"> SHOP NOW</a>
           </span>
         </p>
       </div>
@@ -30,7 +30,7 @@ function Header() {
               <li className="h-20 flex items-center relative">
                 <a
                   className="tracking-wider flex items-center h-full	peer before:content-[''] before:h-[1px] before:duration-300 before:w-full before:absolute before:scale-x-0 before:hover:scale-x-100 before:bg-[#1367fe] cursor-pointer relative before:bottom-1/2    before:translate-y-3 before:transition-all "
-                  href="#home"
+                  href="/"
                 >
                   HOME
                 </a>
@@ -110,7 +110,7 @@ function Header() {
               <li className="h-20 flex items-center">
                 <a
                   className="tracking-wider	 before:content-[''] before:h-[1px] before:duration-300 before:w-full before:absolute before:scale-x-0 before:hover:scale-x-100 before:bg-[#1367fe] cursor-pointer relative before:bottom-0 before:transition-all"
-                  href="#contact"
+                  href="/contact"
                 >
                   CONTACT
                 </a>
@@ -121,7 +121,10 @@ function Header() {
             <button className="sm:hidden block">
               <AiOutlineMenu />
             </button>
+            <a href="/register">
             <AiOutlineUser size={"20px"} />
+
+            </a>
             <button
               onClick={() => {
                 setModal(true);
