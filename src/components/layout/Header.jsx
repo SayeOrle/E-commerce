@@ -51,7 +51,7 @@ function Header() {
               <li className="h-20   flex items-center relative ">
                 <a
                   className="tracking-wider flex items-center h-full	peer before:content-[''] before:h-[1px] before:duration-300 before:w-full before:absolute before:scale-x-0 before:hover:scale-x-100 before:bg-[#1367fe] cursor-pointer relative before:bottom-1/2    before:translate-y-3 before:transition-all "
-                  href="#shop"
+                  href="/shop"
                 >
                   SHOP
                 </a>
@@ -135,7 +135,7 @@ function Header() {
             <AiOutlineHeart size={"20px"} />
             <div className="relative">
               <div className="bg-[#1367fe] -z-10  rounded-full flex items-center justify-center text-[10px] text-white h-4 w-4 absolute -top-3 -right-3">1</div>
-              <button className="flex items-center"><BsBag /></button>
+              <button className="flex items-center"><a href="/cart"><BsBag /></a></button>
             </div>
           </div>
         </div>

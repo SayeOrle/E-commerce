@@ -11,6 +11,7 @@ import { useState } from "react";
 import Home from "./components/Home";
 import Shop from "./components/pages/Shop";
 import Auth from "./components/pages/Auth";
+import Cart from "./components/pages/Cart";
 function App() {
   const [modal, setModal] = useState(false);
   const data = {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/shop" element={<Shop/>}/>
           <Route path="/register" element={<Auth/>}/>
+          <Route path="/cart" element={<Cart/>}/>
 
         </Routes>
         </BrowserRouter>
