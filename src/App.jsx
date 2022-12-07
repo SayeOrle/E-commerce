@@ -12,6 +12,7 @@ import Home from "./components/Home";
 import Shop from "./components/pages/Shop";
 import Auth from "./components/pages/Auth";
 import Cart from "./components/pages/Cart";
+import ProductDetail from "./components/pages/ProductDetail";
 function App() {
   const [modal, setModal] = useState(false);
   const data = {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/shop" element={<Shop/>}/>
           <Route path="/register" element={<Auth/>}/>
           <Route path="/cart" element={<Cart/>}/>
+          <Route path="/detail" element={<ProductDetail/>}/>
 
         </Routes>
         </BrowserRouter>
