@@ -8,7 +8,7 @@ function FashionCard() {
         alt=""
         className="object-cover w-full h-full absolute -z-20"
       />
-      <div className="absolute w-full h-full px-9 py-20">
+      <div className="absolute w-full h-full px-9 py-10 md:py-20">
         <div className="flex flex-col items-start gap-y-6">
           <h3 className="text-2xl font-semibold text-white  max-w-[200px]">
             Fashion Month Ready in Capital Shop

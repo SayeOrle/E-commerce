@@ -102,7 +102,7 @@ function Header() {
               <li className="h-20 flex items-center">
                 <a
                   className="tracking-wider	 before:content-[''] before:h-[1px] before:duration-300 before:w-full before:absolute before:scale-x-0 before:hover:scale-x-100 before:bg-[#1367fe] cursor-pointer relative before:bottom-0 before:transition-all"
-                  href="#blog"
+                  href="/blog"
                 >
                   BLOG
                 </a>
