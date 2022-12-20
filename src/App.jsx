@@ -14,6 +14,7 @@ import Auth from "./components/pages/Auth";
 import Cart from "./components/pages/Cart";
 import ProductDetail from "./components/pages/ProductDetail";
 import Blog from "./components/pages/Blog";
+import SingleBlog from "./components/pages/SingleBlog";
 
 function App() {
   const [modal, setModal] = useState(false);
@@ -39,6 +40,8 @@ function App() {
           <Route path="/cart" element={<Cart/>}/>
           <Route path="/detail" element={<ProductDetail/>}/>
           <Route path="/blog" element={<Blog/>}/>
+          <Route path="/singleblog" element={<SingleBlog/>}/>
+
 
         </Routes>
         </BrowserRouter>
