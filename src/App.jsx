@@ -15,8 +15,6 @@ import Cart from "./components/pages/Cart";
 import ProductDetail from "./components/pages/ProductDetail";
 import Blog from "./components/pages/Blog";
 import SingleBlog from "./components/pages/SingleBlog";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
 function App() {
   const [modal, setModal] = useState(false);
   const data = {
