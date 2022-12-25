@@ -32,7 +32,9 @@ function Header() {
           SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL
           DELIVERY- OFF 50%!
           <span className="font-extrabold hover:underline">
-            <a href="/shop" className="uppercase"> shop now</a>
+            <a href="/shop" className="uppercase">
+              shop now
+            </a>
           </span>
         </p>
       </div>
