@@ -100,12 +100,12 @@ function Header() {
                   <div className="flex justify-between gap-x-14   ">
                     <div className=" ">
                       <h3>Shop Style</h3>
-                      <ul>
-                        <li>Home clean</li>
-                        <li>Home clean</li>
-                        <li>Home clean</li>
-                        <li>Home clean</li>
-                        <li>Home clean</li>
+                      <ul className="font-normal mt-3 flex flex-col gap-y-1">
+                        <li>Shop Standard</li>
+                        <li>Shop Only Categories</li>
+                        <li>Shop Image Categories</li>
+                        <li>Shop List</li>
+                        <li>Hover Style 1</li>
                         <li>Home clean</li>
                         <li>Home clean</li>
                         <li>Home clean</li>
@@ -113,29 +113,34 @@ function Header() {
                     </div>
                     <div className=" ">
                       <h3>Filter Layout</h3>
-                      <ul>
-                        <li>shop</li>
-                        <li>shop</li>
-                        <li>shop</li>
-                        <li>shop</li>
+                      <ul className="font-normal mt-3 flex flex-col gap-y-1">
+                        <li>Sidebar</li>
+                        <li>Filter Side Out</li>
+                        <li>Filter Dropdown</li>
+                        <li>Filter Drawer</li>
                       </ul>
                     </div>
                     <div className=" ">
                       <h3>Shop Loader</h3>
-                      <ul>
-                        <li>shop</li>
-                        <li>shop</li>
-                        <li>shop</li>
-                        <li>shop</li>
-                        <li>shop</li>
-                        <li>shop</li>
+                      <ul className="font-normal mt-3 flex flex-col gap-y-1">
+                        <li>Shop Pagination</li>
+                        <li>Shop Infinity</li>
+                        <li>Shop Load More</li>
+                        <li>Cart Modal</li>
+                        <li>Cart Drawer</li>
+                        <li>Cart Page</li>
                       </ul>
                     </div>
                   </div>
-                  <div className=" flex-2 flex flex-col">
-                    <img src={logo} alt="" /> <h3>JOIN THE LAYERING GANG</h3>
-                    <h4>Suspendisse faucibus nunc et pellentesque</h4>
-                    <a href="1">Shop Now</a>
+                  <div className=" flex-2 flex flex-col gap-y-3 items-start">
+                    <img src={logo} alt="" />
+                    <span className="flex flex-col">
+                      <h3>JOIN THE LAYERING GANG</h3>
+                      <small>Suspendisse faucibus nunc et pellentesque</small>
+                    </span>
+                    <a href="1" className="border border-black px-3 py-1">
+                      Shop Now
+                    </a>
                   </div>
                 </div>
               </li>

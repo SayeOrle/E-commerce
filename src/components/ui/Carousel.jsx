@@ -19,7 +19,6 @@ import { useRef } from "react";
 // }
 
 function Carousel() {
-
   return <div className="h-screen pt-[123.99px] sm:pt-[139.98px]"></div>;
 }
 
