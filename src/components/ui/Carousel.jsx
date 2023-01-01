@@ -19,36 +19,7 @@ import { useRef } from "react";
 // }
 
 function Carousel() {
-  const slider = useRef();
-  let prevScrennW = 0;
 
-  const prev = () => {
-    if (prevScrennW < 0) {
-      prevScrennW = 3 * window.innerWidth;
-    }
-    slider.current.scrollTo({
-      left: prevScrennW,
-      behavior: "smooth",
-    });
-
-    prevScrennW -= window.innerWidth;
-    console.log(prevScrennW);
-  };
-  let nextScrennW = window.innerWidth;
-
-  const next = () => {
-    if (nextScrennW === 4 * window.innerWidth) {
-      nextScrennW = 0;
-    }
-
-    slider.current.scrollTo({
-      left: nextScrennW,
-      behavior: "smooth",
-    });
-    nextScrennW += window.innerWidth;
-
-    console.log(nextScrennW);
-  };
   return <div className="h-screen pt-[123.99px] sm:pt-[139.98px]"></div>;
 }
 
