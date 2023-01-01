@@ -9,7 +9,7 @@ function Campaign() {
         <span className="bg-white h-1 w-10 "></span>
         <a
           href="s"
-          className="px-8 py-3 bg-white text-black hover:bg-[#1357fe] hover:text-white font-semibold"
+          className="px-8 py-3 bg-white text-black hover:bg-[#1357fe] transition-all hover:text-white font-semibold"
         >
           SHOP NOW
         </a>
